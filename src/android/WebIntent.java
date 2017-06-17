@@ -185,7 +185,7 @@ public class WebIntent extends CordovaPlugin {
 
         if (this.onNewIntentCallbackContext != null) {
             //PluginResult result = new PluginResult(PluginResult.Status.OK, intent.getDataString());
-            PluginResult result = new PluginResult(PluginResult.Status.OK, streamUri.toString());
+            PluginResult result = new PluginResult(PluginResult.Status.OK, "");
             result.setKeepCallback(true);
             this.onNewIntentCallbackContext.sendPluginResult(result);
         }
